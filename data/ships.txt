@@ -16,12 +16,16 @@ ship "Raptor"
 		"no repeat"
 		"transition rewind"
 	sprite-landing "ship/raptor/landing/raptor"
-		"frame rate" 5
+		"frame rate" 10
 		"no repeat"
 	sprite-launching "ship/raptor/launching/raptor"
 		"frame rate" 5
 		"no repeat"
 		"transition finish"
+	sprite-jumping "ship/raptor/jumping/raptor"
+		"frame rate" 5
+		"indicate"
+		"transition rewind"
 	thumbnail "thumbnail/raptor"
 	attributes
 		category "Interceptor"
