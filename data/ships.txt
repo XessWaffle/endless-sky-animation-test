@@ -1,0 +1,65 @@
+# Copyright (c) 2022 by XessWaffle
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+ship "Raptor"
+	sprite "ship/raptor/flying/raptor"
+		"frame rate" 5
+	sprite-fighting "ship/raptor/fighting/raptor"
+		"frame rate" 20
+		"no repeat"
+		"transition rewind"
+	sprite-landing "ship/raptor/landing/raptor"
+		"frame rate" 5
+		"no repeat"
+	sprite-launching "ship/raptor/launching/raptor"
+		"frame rate" 5
+		"no repeat"
+		"transition finish"
+	thumbnail "thumbnail/raptor"
+	attributes
+		category "Interceptor"
+		"cost" 3500000
+		"shields" 15000
+		"hull" 1000
+		"required crew" 4
+		"bunks" 5
+		"mass" 100
+		"drag" 2.0
+		"heat dissipation" 1.0
+		"fuel capacity" 1000
+		"cargo space" 30
+		"outfit space" 470
+		"weapon capacity" 200
+		"engine capacity" 150
+		"ramscoop" 10
+		weapon
+			"blast radius" 80
+			"shield damage" 800
+			"hull damage" 400
+			"hit force" 1200
+	outfits
+		"Sunbeam" 1
+		
+		"Antimatter Core"
+		"Nanotech Battery"
+		"Quantum Shield Generator"
+		"Intrusion Countermeasures" 80
+		
+		"Medium Graviton Thruster"
+		"Medium Graviton Steering"
+		"Jump Drive"
+	engine 0 70
+	gun 0 -70 "Sunbeam"
+	explode "tiny explosion" 10
+	explode "small explosion" 25
+	explode "medium explosion" 25
+	explode "large explosion" 10
+	"final explode" "final explosion medium"
+	description "The Raptor is a test ship designed to test different kinds of animations!"
