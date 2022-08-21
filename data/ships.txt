@@ -58,7 +58,7 @@ ship "Raptor"
 		
 		"Medium Graviton Thruster"
 		"Medium Graviton Steering"
-		"Scram Drive	"
+		"Scram Drive"
 	engine 0 70
 	gun 0 -70 "Sunbeam"
 	explode "tiny explosion" 10
