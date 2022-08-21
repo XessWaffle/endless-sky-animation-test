@@ -11,9 +11,9 @@
 ship "Raptor"
 	sprite "ship/raptor/flying/raptor"
 		"frame rate" 5
-	sprite-fighting "ship/raptor/fighting/raptor"
+	sprite-firing "ship/raptor/fighting/raptor"
 		"frame rate" 20
-		"no repeat"
+		"indicate"
 		"transition rewind"
 	sprite-landing "ship/raptor/landing/raptor"
 		"frame rate" 10
@@ -58,7 +58,7 @@ ship "Raptor"
 		
 		"Medium Graviton Thruster"
 		"Medium Graviton Steering"
-		"Jump Drive"
+		"Scram Drive	"
 	engine 0 70
 	gun 0 -70 "Sunbeam"
 	explode "tiny explosion" 10
