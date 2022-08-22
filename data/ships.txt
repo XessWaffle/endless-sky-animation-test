@@ -14,6 +14,7 @@ ship "Raptor"
 	sprite-firing "ship/raptor/fighting/raptor"
 		"frame rate" 20
 		"indicate"
+		"transition delay" 10
 		"transition rewind"
 	sprite-landing "ship/raptor/landing/raptor"
 		"frame rate" 10
