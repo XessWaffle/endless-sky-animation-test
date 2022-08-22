@@ -14,7 +14,7 @@ ship "Raptor"
 	sprite-firing "ship/raptor/fighting/raptor"
 		"frame rate" 20
 		"indicate"
-		"transition delay" 10
+		"transition delay" 50
 		"transition rewind"
 	sprite-landing "ship/raptor/landing/raptor"
 		"frame rate" 10
@@ -24,8 +24,11 @@ ship "Raptor"
 		"no repeat"
 		"transition finish"
 	sprite-jumping "ship/raptor/jumping/raptor"
-		"frame rate" 5
+		"frame rate" 20
 		"indicate"
+		"transition rewind"
+	sprite-disabled "ship/raptor/disabled/raptor"
+		"frame rate" 10
 		"transition rewind"
 	thumbnail "thumbnail/raptor"
 	attributes
