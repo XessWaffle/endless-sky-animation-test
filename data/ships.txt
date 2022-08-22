@@ -12,6 +12,7 @@ ship "Raptor"
 	sprite "ship/raptor/flying/raptor"
 		"frame rate" 5
 	sprite-firing "ship/raptor/fighting/raptor"
+		"trigger" "Sunbeam" "ship/raptor/fighting/sunbeam/raptor" "no indicate"
 		"frame rate" 20
 		"indicate"
 		"transition delay" 50
