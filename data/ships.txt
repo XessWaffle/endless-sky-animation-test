@@ -30,6 +30,7 @@ ship "Raptor"
 		"transition rewind"
 	sprite-disabled "ship/raptor/disabled/raptor"
 		"frame rate" 10
+		"no repeat"
 		"transition rewind"
 	thumbnail "thumbnail/raptor"
 	attributes
