@@ -9,7 +9,7 @@
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 ship "Raptor"
-	sprite "ship/raptor/flying/raptor"
+	sprite "ship/raptor/flying-disabled/raptor"
 		"frame rate" 5
 	sprite-firing "ship/raptor/fighting/raptor"
 		"trigger" "Sunbeam" "ship/raptor/fighting/sunbeam/raptor" "no indicate"
@@ -28,10 +28,9 @@ ship "Raptor"
 		"frame rate" 20
 		"indicate"
 		"transition rewind"
-	sprite-disabled "ship/raptor/disabled/raptor"
-		"frame rate" 10
-		"no repeat"
-		"transition rewind"
+	sprite-disabled "ship/raptor/flying-disabled/raptor"
+		"frame rate" 5
+		"random"
 	thumbnail "thumbnail/raptor"
 	attributes
 		category "Interceptor"
