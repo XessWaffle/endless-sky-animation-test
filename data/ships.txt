@@ -23,7 +23,7 @@ ship "Raptor"
 	sprite-launching "ship/raptor/launching/raptor"
 		"frame rate" 5
 		"no repeat"
-		"transition finish"
+		"transition finish"			
 	sprite-jumping "ship/raptor/jumping/raptor"
 		"frame rate" 20
 		"indicate"
@@ -33,10 +33,10 @@ ship "Raptor"
 		"random"
 	thumbnail "thumbnail/raptor"
 	attributes
-		category "Interceptor"
+		category "Light Warship"
 		"cost" 3500000
 		"shields" 15000
-		"hull" 1000
+		"hull" 5000
 		"required crew" 4
 		"bunks" 5
 		"mass" 100
@@ -72,3 +72,138 @@ ship "Raptor"
 	explode "large explosion" 10
 	"final explode" "final explosion medium"
 	description "The Raptor is a test ship designed to test different kinds of animations!"
+
+ship "Vulture"
+	sprite "ship/vulture/flying-disabled/vulture"
+		"frame rate" 5
+	sprite-firing "ship/vulture/firing-landing/vulture"
+		"frame rate" 20
+		"indicate"
+		"transition delay" 50
+		"transition rewind"
+	sprite-landing "ship/vulture/firing-landing/vulture"
+		"frame rate" 10
+		"no repeat"
+	sprite-launching "ship/vulture/launching/vulture"
+		"frame rate" 5
+		"no repeat"
+		"transition finish"
+	sprite-disabled "ship/vulture/flying-disabled/vulture"
+		"frame rate" 5
+		"random"
+	thumbnail "thumbnail/vulture"
+	attributes
+		category "Interceptor"
+		"cost" 1000000
+		"shields" 8000
+		"hull" 2000
+		"required crew" 1
+		"bunks" 2
+		"mass" 70
+		"drag" 3.0
+		"heat dissipation" 0.8
+		"fuel capacity" 500
+		"cargo space" 260
+		"outfit space" 300
+		"weapon capacity" 100
+		"engine capacity" 150
+		"ramscoop" 10
+		weapon
+			"blast radius" 50
+			"shield damage" 800
+			"hull damage" 200
+			"hit force" 600
+	outfits
+		"Intrusion Countermeasures" 80
+		"Medium Graviton Steering"
+		"Medium Graviton Thruster"
+		"Nanotech Battery"
+		"Red Sun Reactor"
+		"Scram Drive"
+		Moonbeam 1
+		"Systems Core (Small)"
+	engine 0 45
+	gun -20 -40 "Moonbeam"
+	explode "tiny explosion" 5
+	explode "small explosion" 15
+	explode "medium explosion" 20
+	"final explode" "final explosion medium"
+	description "The Vulture is a test ship designed to test different kinds of animations!"
+
+ship "Eagle"
+	sprite "ship/eagle/flying-disabled/eagle"
+		"frame rate" 5
+	sprite-firing "ship/eagle/firing/eagle"
+		"frame rate" 20
+		"indicate"
+		"transition delay" 100
+		"transition rewind"
+	sprite-landing "ship/eagle/landing/eagle"
+		"frame rate" 30
+		"no repeat"
+	sprite-launching "ship/eagle/launching/eagle"
+		"frame rate" 30
+		"no repeat"
+		"transition finish"
+	sprite-jumping "ship/eagle/jumping/eagle"
+		"frame rate" 20
+		"indicate"
+		"transition rewind"
+	sprite-disabled "ship/eagle/flying-disabled/eagle"
+		"frame rate" 20
+		"random"
+	thumbnail "thumbnail/eagle"
+	attributes
+		category "Heavy Warship"
+		"cost" 100000000
+		"shields" 56000
+		"hull" 30000
+		"required crew" 48
+		"bunks" 76
+		"mass" 300
+		"drag" 6.0
+		"heat dissipation" 1.2
+		"fuel capacity" 1200
+		"cargo space" 460
+		"outfit space" 840
+		"weapon capacity" 450
+		"engine capacity" 250
+		"ramscoop" 10
+		weapon
+			"blast radius" 150
+			"shield damage" 2400
+			"hull damage" 1800
+			"hit force" 1000
+	outfits
+		
+		"Dual Sunbeam Turret" 4
+		"Wanderer Anti-Missile" 2
+		
+		"Antimatter Core"
+		"Nanotech Battery"
+		"Quantum Shield Generator"
+		"Intrusion Countermeasures" 80
+		
+		"Medium Graviton Thruster"
+		"Medium Graviton Steering"
+		"Scram Drive"
+	engine -27.5 290
+	engine 25.5 290
+	turret 0 98 "Dual Sunbeam Turret"
+		under
+	turret -27 142 "Dual Sunbeam Turret"
+		under
+	turret 0 182 "Dual Sunbeam Turret"
+		under
+	turret 27 142 "Dual Sunbeam Turret"
+		under
+	turret 0 -81.5 "Wanderer Anti-Missile"
+		under
+	turret 0 -67.5 "Wanderer Anti-Missile"
+		under
+	explode "tiny explosion" 40
+	explode "small explosion" 50
+	explode "medium explosion" 100
+	explode "large explosion" 80
+	"final explode" "final explosion large"
+	description "The Eagle is a test ship designed to test different kinds of animations!"
