@@ -12,15 +12,18 @@ ship "Raptor"
 	sprite "ship/raptor/flying-disabled/raptor"
 		"frame rate" 5
 	sprite-firing "ship/raptor/fighting/raptor"
-		"trigger" "Sunbeam" "ship/raptor/fighting/sunbeam/raptor" "no indicate"
+		ramp 20 0
+		"trigger" "Sunbeam" "ship/raptor/fighting/sunbeam/raptor"
+		"trigger" "Pug Seeker" "ship/raptor/fighting/raptor" "on use"
 		"frame rate" 20
-		"indicate"
+		"no repeat"
 		"transition delay" 50
 		"transition rewind"
 	sprite-landing "ship/raptor/landing/raptor"
 		"frame rate" 10
 		"no repeat"
-	sprite-launching "ship/raptor/launching/raptor"
+	sprite-launching "ship/raptor/landing/raptor"
+		reverse
 		"frame rate" 5
 		"no repeat"
 		"transition finish"			
@@ -77,6 +80,7 @@ ship "Vulture"
 	sprite "ship/vulture/flying-disabled/vulture"
 		"frame rate" 5
 	sprite-firing "ship/vulture/firing-landing/vulture"
+		ramp 5 1
 		"frame rate" 20
 		"indicate"
 		"transition delay" 50
@@ -84,7 +88,8 @@ ship "Vulture"
 	sprite-landing "ship/vulture/firing-landing/vulture"
 		"frame rate" 10
 		"no repeat"
-	sprite-launching "ship/vulture/launching/vulture"
+	sprite-launching "ship/vulture/firing-landing/vulture"
+		reverse
 		"frame rate" 5
 		"no repeat"
 		"transition finish"
@@ -134,11 +139,13 @@ ship "Eagle"
 	sprite "ship/eagle/flying-disabled/eagle"
 		"frame rate" 5
 	sprite-firing "ship/eagle/firing/eagle"
+		ramp 20 0
 		"frame rate" 20
 		"indicate"
 		"transition delay" 100
 		"transition rewind"
-	sprite-landing "ship/eagle/landing/eagle"
+	sprite-landing "ship/eagle/launching/eagle"
+		reverse
 		"frame rate" 30
 		"no repeat"
 	sprite-launching "ship/eagle/launching/eagle"
@@ -146,6 +153,9 @@ ship "Eagle"
 		"no repeat"
 		"transition finish"
 	sprite-jumping "ship/eagle/jumping/eagle"
+		ramp 30 5
+		trigger "Jump Drive" "ship/eagle/launching/eagle" "on use"
+			reverse
 		"frame rate" 20
 		"indicate"
 		"transition rewind"
