@@ -13,8 +13,12 @@ ship "Raptor"
 		"frame rate" 5
 	sprite-firing "ship/raptor/fighting/raptor"
 		ramp 20 0
-		"trigger" "Sunbeam" "ship/raptor/fighting/sunbeam/raptor"
-		"trigger" "Pug Seeker" "ship/raptor/fighting/raptor" "on use"
+		"trigger" "ship/raptor/fighting/sunbeam/raptor"
+			conditions
+				has "outfit (installed): Sunbeam"
+		"trigger" "ship/raptor/fighting/raptor"
+			conditions
+				has "weapon (firing): Pug Seeker"
 		"frame rate" 20
 		"no repeat"
 		"transition delay" 50
@@ -154,8 +158,10 @@ ship "Eagle"
 		"transition finish"
 	sprite-jumping "ship/eagle/jumping/eagle"
 		ramp 30 5
-		trigger "Jump Drive" "ship/eagle/launching/eagle" "on use"
+		trigger "ship/eagle/launching/eagle"
 			reverse
+			conditions
+				has "jump (using): Jump Drive"
 		"frame rate" 20
 		"indicate"
 		"transition rewind"
